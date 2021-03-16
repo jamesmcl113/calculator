@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Calculator</title>
 </head>
 <body>
+    <header>
+        <h1>Calculator</h1>
+    </header>
+    <div id="calculator">
+        <div id="screen">
+            <p id="screen-text">|</p>
+        </div>
+        <div id="button-grid">
+            <button class="button button-big" id="button-red" onclick="clearCalc()">CLEAR</button>
+            <button class="button button-big" id="button-blue" onclick="deleteChar()">BACK</button>
+            <button class="button" onclick="numberPressed('1')">1</button>
+            <button class="button" onclick="numberPressed('2')">2</button>
+            <button class="button" onclick="numberPressed('3')">3</button>
+            <button class="button" onclick="operationPressed('+')">+</button>
+            <button class="button" onclick="numberPressed('4')">4</button>
+            <button class="button" onclick="numberPressed('5')">5</button>
+            <button class="button" onclick="numberPressed('6')">6</button>
+            <button class="button" onclick="operationPressed('-')">-</button>
+            <button class="button" onclick="numberPressed('7')">7</button>
+            <button class="button" onclick="numberPressed('8')">8</button>
+            <button class="button" onclick="numberPressed('9')">9</button>
+            <button class="button" onclick="operationPressed('*')">*</button>
+            <button class="button">?</button>
+            <button class="button" onclick="numberPressed('0')">0</button>
+            <button class="button" onclick="operationPressed('=')">=</button>
+            <button class="button" onclick="operationPressed('/')">/</button>
+        </div>
+    </div>
     
+
+    <script src="main.js" type="text/javascript"></script>
 </body>
 </html>
